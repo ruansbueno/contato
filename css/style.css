@@ -108,3 +108,15 @@ footer a{
         font-size: 25px;
     }
 }
+
+@media screen and (max-width:400px){
+    nav ul li{
+        margin: 6px 0;
+        width: 100%;
+    }
+
+    nav ul li a{
+        padding: 5px 0;
+        font-size: 14px;
+    }
+}
