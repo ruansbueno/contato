@@ -119,4 +119,7 @@ footer a{
         padding: 5px 0;
         font-size: 14px;
     }
+    main header img{
+        max-width: 145px;
+    }
 }
