@@ -1,43 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16828582371"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16828582371');
+</script>
+
+    <!-- Event snippet for Entrou em contato conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16828582371/v81iCMv5uJEaEOOTv9g-',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+
     <link rel="stylesheet" href="./css/font-awesome/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Patrick Ferreira</title>
+    <title>Ruan Bueno | Desenvolvedor WEB</title>
 </head>
 <body>
     <main>
         <header>
-            <img src="perfil.jpeg" alt="Foto do Ruan Bueno">
-            <h1>Patrick Ferreira | Gestor de Tráfego</h1>
+            <img src="perfil.jpg" alt="Foto do Ruan Bueno">
+            <h1>Desenvolvedor de Sites</h1>
         </header>
         <nav>
             <ul>
-                 
-                <li class="big">
-                    <a 
-                    href="https://wa.me/5551984511988?text=Ol%C3%A1!">Entrar em contato<i style="margin-left: 10px;" class="fa-brands fa-whatsapp"></i></a></li>
-                <li class="big"><a href="https://www.instagram.com/patrickferrs/">Visitar Instagram<i style="margin-left: 10px;" class="fa-brands fa-instagram"></i></a></li>
+                
+
+                <li class="small" onclick="gtag_report_conversion();"><a href="https://www.facebook.com/ruan.souzabueno/" alt="Facebook de Ruan Bueno"><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="small" onclick="gtag_report_conversion();"><a href="https://www.instagram.com/ruansbueno/" alt="Instagram de Ruan Bueno"><i class="fa-brands fa-instagram"></i></a></li>
+                
+                <li class="big" onclick="gtag_report_conversion();"><a href="https://api.whatsapp.com/send?phone=5551981161963&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20fazer%20meu%20site!">Solicitar Proposta<i style="margin-left: 10px;" class="fa-brands fa-whatsapp"></i></a></li>
+                <li class="big" onclick="gtag_report_conversion();"><a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=ruansbueno@gmail.com">Contato <i style="margin-left: 10px;" class="fa-regular fa-envelope"></i></a></li>
                 
             </ul>
         </nav>
 
-        <section class="sobre">
-            <h3>Sobre mim</h3>
-            <p>Gestor de tráfego com foco em alta performance e amplo conhecimento em API Oficial. Já investi múltiplos seis dígitos por mês em campanhas, sempre voltado a gerar crescimento real para negócios. Minha trajetória começou como garçom, até encontrar no marketing digital a oportunidade de transformar minha vida. Hoje, além de gerir grandes investimentos, tenho como propósito ensinar e inspirar outros profissionais a alcançarem seus objetivos.</p>
-        </section>
+        <footer>
+            <p>Todos os direitos reservados &copy;</p>
+            <p>Desenvolvido por <a target="_blank" href="https://www.instagram.com/ruansbueno/">Ruan Bueno</a></p>
+        </footer>
     </main>
-
-    <footer>
-        <p>Empresa Consolidada há 4 anos</p>
-        <p>CNPJ: 62.643.180/0001-87</p>
-
-        <p style="margin-top:15px">Todos os direitos reservados &copy;</p>
-        <p>Desenvolvido por <a target="_blank" href="https://www.instagram.com/ruansbueno/">Ruan Bueno</a></p>
-    </footer>
 </body>
 </html>
